@@ -1,0 +1,37 @@
+.headerLeftTitleStyle {
+    color: red;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: 'Great Vibes', cursive;
+    font-size: 32px;
+    font-weight: normal;
+}
+
+/* 媒体查询 */
+@media screen and (min-width: 768px) {
+  .largerStyle {
+    display: flex;
+  }
+  .smallerStyle {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .largerStyle {
+    display: none;
+  }
+  .smallerStyle {
+    display:flex;
+  }
+}
+
+/* 大屏适配 */
+.largerStyle {
+
+}
+
+/* 小屏适配 */
+.smallerStyle {
+
+}
