@@ -1,10 +1,40 @@
+/*左侧博客名样式*/
 .headerLeftTitleStyle {
-    color: red;
-    font-size: 20px;
-    text-decoration: none;
-    font-family: 'Great Vibes', cursive;
-    font-size: 32px;
-    font-weight: normal;
+  color: red;
+  font-size: 20px;
+  text-decoration: none;
+  font-family:
+    Great Vibes,
+    cursive;
+  font-size: 32px;
+  font-weight: normal;
+}
+
+.homeHeaderContainer {
+  background-color: white;
+  height: 3rem;
+  line-height: 3rem;
+  position: fixed;
+  padding: 0 8rem;
+  width: calc(100%);
+  display: flex;
+  align-items: center;
+}
+
+/*左侧和右侧样式*/
+.logeAvatarStyle {
+  width: 12rem;
+  display: flex;
+  justify-content: center;
+}
+
+/*头像样式*/
+.avatarBgStyle {
+  width: 2rem;
+  height: 2rem;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
 }
 
 /* 媒体查询 */
@@ -22,16 +52,26 @@
     display: none;
   }
   .smallerStyle {
-    display:flex;
+    display: flex;
   }
 }
 
 /* 大屏适配 */
 .largerStyle {
-
 }
 
 /* 小屏适配 */
 .smallerStyle {
+}
 
+/* navLink样式 */
+.navLink {
+  color: black;
+  margin-right: 1rem;
+  text-decoration: none;
+}
+
+.navLink.active {
+  font-weight: bold;
+  color: blue;
 }

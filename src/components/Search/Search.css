@@ -1,0 +1,50 @@
+.overWriteSearchStyle {
+  background-color: skyblue;
+  input::placeholder {
+    color: red; /* 修改颜色 */
+    font-size: 14px; /* 修改字体大小 */
+    font-style: italic; /* 可选：斜体 */
+  }
+
+  input:hover {
+    cursor: pointer;
+  }
+}
+
+/* contrl K后缀 */
+.shortcut-hint {
+  background-color: #f5f5f5;
+  border: 0.5px solid #d9d9d9;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 12px;
+  color: #666;
+  margin-left: 8px;
+  user-select: none;
+  font-family: monospace;
+}
+
+/* 遮罩层 */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* 遮罩内容区域 */
+.overlay-content {
+  background: white;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  max-width: 80vw;
+  margin-top: 100px;
+  text-align: center;
+}
