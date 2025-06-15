@@ -1,54 +1,24 @@
-# React + TypeScript + Vite
+# Inklog ✒️ —— 个人博客平台
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Inklog** 是一个简洁优雅的个人博客系统，基于 **React + Node.js** 构建，适合开发者或创作者用来记录思考、展示项目与数字作品集。
 
-Currently, two official plugins are available:
+## ✨ 功能特性
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 📝 支持 Markdown 撰写与高亮显示
+- 🌗 深浅主题切换
+- 🔍 内置全文搜索（支持命令面板样式）
+- 🧭 快捷键呼出命令面板（Cmd/Ctrl + K）
+- 🏷️ 标签与分类管理
+- 💬 评论功能集成（可选 Giscus / Disqus）
+- 🔒 简易后台登录，支持文章发布与管理
+- 📱 响应式设计，移动端友好
 
-## Expanding the ESLint configuration
+## 🛠 技术栈
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **前端**：React + Vite + Tailwind CSS
+- **后端**：Node.js + Express
+- **数据库**：MongoDB（或使用本地 JSON 文件作为简易存储）
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+持续开发中
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+ 
